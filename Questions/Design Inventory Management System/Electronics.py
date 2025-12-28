@@ -5,12 +5,13 @@ class electronics(Interface_Products):
         self.skn = skn
         self.quan = quan
         self.cost = cost
+        self.type = "electronics"
 
     def SKN(self):
-        print("SKN added to electronics!!!", self.skn)
+        return self.skn
     
     def Quantity(self):
-        print("Total Electronics added:", self.quan)
+        return self.quan
     
     def price(self):
-        print("Cost of Electronics:", self.cost)
+        return self.cost

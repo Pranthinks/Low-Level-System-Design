@@ -5,12 +5,13 @@ class Sports_prod(Interface_Products):
         self.skn = skn
         self.quan = quan
         self.cost = cost
+        self.type = "sports"
 
     def SKN(self):
-        print("SKN added to Sports Goods!!!", self.skn)
+        return self.skn
     
     def Quantity(self):
-        print("Total Sports Goods added:", self.quan)
+        return self.quan
     
     def price(self):
-        print("Cost of Sports Goods:", self.cost)
+        return self.cost
